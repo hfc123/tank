@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+		<meta charset="UTF-8">
+		<title>坦克大战</title>
+		<script type="text/javascript">
+	var	requestAnimFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+        function( /* function FrameRequestCallback */ callback, /* DOMElement Element */ element) {
+            return window.setTimeout(callback, 1000 / 60);
+        };
+})();
+			function gameLoop() {
+				// 循环执行函数
+				//console.log('111')
+				requestAnimFrame(gameLoop);
+			}
+			gameLoop();
+		</script>
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
